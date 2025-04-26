@@ -209,7 +209,7 @@ input:checked + .slider:before {
     align-items: center;
 }
 .landing{
-    background-image: url("/Home files/img1.jpeg");
+    background-image: url("Home files/img1.jpeg");
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
