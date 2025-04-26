@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chechout.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="../index.html" class="home">Pencil&Pixel</a>
+            <div class="nav-bar">
+                <label id="arrow-up" onclick="showUp()"><i class="fa fa-bars bars" aria-hidden="true"></i><i class="fa fa-angle-double-down" aria-hidden="true"></i></label>
+                <label class="hidden" id="arrow-down" onclick="showDown()"><i class="fa fa-bars bars" aria-hidden="true"></i><i class="fa fa-angle-double-up" aria-hidden="true"></i></label>
+                <div class="hidden trans" id="nav-content">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/Login/signin.html">Login</a></li>
+                        <li><a href="/index.html">Products</a></li>
+                        <li><a href="/contact us/contact.html">Cotact Us</a></li>
+                        <li><a href="/check out/checkout.html">Check Out</a></li>
+                        <li><a href="/Terms and conditions/terms.html">Terms and conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="check">
+                <div class="search-box">
+                    <input type="text" placeholder="Type here...">
+                    <label for="check" class="icon">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="switchbox">
+                <p>Web Theme</p>
+                <label class="switch">
+                    <input type="checkbox" id="themeSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="profile">            
+                <a href="../Login/signin.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left">
+                <img src="https://i.pinimg.com/736x/64/42/bc/6442bc4c5cb36ec1c9cbc96e8819e1da.jpg" alt="supplies photo" style="max-width: 300%; height: 200%;">
+            </div>
+            <div class="right">
+                <h2>CheckOut<br><small>Payment Information</small></h2>
+    
+                <label for="name">Cardholder Name</label>
+                <input type="text" id="name" placeholder="code break" />
+    
+                <label for="number">Card Number</label>
+                <input type="text" id="number" placeholder="1234 5678 9012 3456" />
+    
+                <label for="type">Card Type</label>
+                <select id="type">
+                    <option value="">select a card Type</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="amex">American Express</option>
+                </select>
+    
+                <div class="row">
+                    <div>
+                        <label for="expiry">Expiry</label>
+                        <input type="text" id="expiry" placeholder="mm/dd/yyyy" />
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="CVV" />
+                    </div>
+                </div>
+    
+                <button>CheckOut</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            copyright © 2025 Pencil&Pixel. All rights reserved.
+        </div>
+    </footer>
+    <script src="checkout.js"></script>
+</body>
+</html>

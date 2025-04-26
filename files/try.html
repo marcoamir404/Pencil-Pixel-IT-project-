@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swiper Slider Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    :root {
+      --main-color: #ff4d4d;
+      --font-color: #000;
+    }
+
+    body {
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+      font-family: Arial, sans-serif;
+    }
+
+    .slider {
+      width: 900px;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 300px;
+      background-color: #ffa7a7;
+      border-radius: 34px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .swiper-slide {
+      background: rgb(185, 16, 16);
+      border-radius: 20px;
+      width: 200px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product-image {
+      height: 140px;
+      width: 150px;
+      border-radius: 50%;
+      padding: 3px;
+    }
+
+    .product-image img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .product-name {
+      margin-top: 10px;
+      color: var(--font-color);
+    }
+
+    .product-name .name {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="slider">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide product-card">
+          <div class="product-image">
+            <img src="/Home files/product1.jpg" alt="Pencil 1">
+          </div>
+          <div class="product-name">
+            <span class="name">Pencil 1</span>
+          </div>
+        </div>
+        <div class="swiper-slide product-card">
+          <div class="product-image">
+            <img src="/Home files/product1.jpg" alt="Pencil 2">
+          </div>
+          <div class="product-name">
+            <span class="name">Pencil 2</span>
+          </div>
+        </div>
+        <div class="swiper-slide product-card">
+          <div class="product-image">
+            <img src="/Home files/product1.jpg" alt="Pencil 3">
+          </div>
+          <div class="product-name">
+            <span class="name">Pencil 3</span>
+          </div>
+        </div>
+        <div class="swiper-slide product-card">
+          <div class="product-image">
+            <img src="/Home files/product1.jpg" alt="Pencil 4">
+          </div>
+          <div class="product-name">
+            <span class="name">Pencil 4</span>
+          </div>
+        </div>
+        <div class="swiper-slide product-card">
+          <div class="product-image">
+            <img src="/Home files/product1.jpg" alt="Pencil 5">
+          </div>
+          <div class="product-name">
+            <span class="name">Pencil 5</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+
+</body>
+</html>

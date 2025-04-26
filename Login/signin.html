@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sign in</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="../index.html" class="home">Pencil&Pixel</a>
+            <div class="nav-bar">
+                <label id="arrow-up" onclick="showUp()"><i class="fa fa-bars bars" aria-hidden="true"></i><i class="fa fa-angle-double-down" aria-hidden="true"></i></label>
+                <label class="hidden" id="arrow-down" onclick="showDown()"><i class="fa fa-bars bars" aria-hidden="true"></i><i class="fa fa-angle-double-up" aria-hidden="true"></i></label>
+                <div class="hidden trans" id="nav-content">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/Login/signin.html">Login</a></li>
+                        <li><a href="/index.html">Products</a></li>
+                        <li><a href="/contact us/contact.html">Cotact Us</a></li>
+                        <li><a href="/check out/checkout.html">Check Out</a></li>
+                        <li><a href="/Terms and conditions/terms.html">Terms and conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="check">
+                <div class="search-box">
+                    <input type="text" placeholder="Type here...">
+                    <label for="check" class="searchicon">
+                        <i class="fa fa-search " aria-hidden="true"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="switchbox">
+                <p>Web Theme</p>
+                <label class="switch">
+                    <input type="checkbox" id="themeSwitch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="signinbox" id="signin">
+                <label class="toggle-btn">Login</label>
+                <form>
+                    <div class="icons">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </div>
+                    <p>or use your E-mail and password</p>
+                    <div class="email"><input type="email" placeholder="E-mail" name="email" id="email" required></div><hr>
+                    <div class="pass"><input type="password" placeholder="Password" id="email" required></div><hr>
+                    <p>Forget password?</p>
+                    <div class="submit"><button type="submit" onclick="sendMessageLogin()">Login</button></div>
+                    <hr>
+                    <p>don't have an account?</p>
+                    <label class="toggle-btn" id="signupswitch" onclick="showSignUp()">Sign Up</label>
+                </form>
+            </div>
+            <div class="signup hidden" id="signup">
+                <form>
+                    <label class="toggle-btn">Sign up</label>
+                    <div class="icons">
+                        <i width="50px" class="fa fa-google" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </div>
+                    <p>or use your E-mail for sign up </p>
+                    <div class="name"><input type="text" placeholder="Name" name="name" required></div><hr>
+                    <div class="email2"><input type="email" placeholder="E-mail" name="email" required></div><hr>
+                    <div class="pass"><input type="password" placeholder="Password" name="password" required></div><hr>
+                    <div class="confirmpass"><input type="password" placeholder="Confirm Password" name="confirmpassword" required></div><hr>
+                    <div class="submit"><button type="submit" onclick="sendMessageSignUp()">Sign up</button></div>
+                    <hr>
+                    <p>Already have an account?</p>
+                    <label class="toggle-btn" id="loginswitch" onclick="showSignIn()">Login</label>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            copyright © 2025 Pencil&Pixel. All rights reserved.
+        </div>
+    </footer>
+    <script src="script-signin.js"></script>
+</body>
+</html>

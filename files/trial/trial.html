@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Home Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MySite</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch">
+        <span class="slider round"></span>
+      </label>
+    </nav>
+  </header>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Submit</button>
+  <section class="hero" data-aos="fade-up">
+    <h2>Welcome to My Website</h2>
+    <p>This is an advanced layout using HTML, CSS & JS</p>
+    <a href="#" class="btn">Get Started</a>
+  </section>
+
+  <!-- Slider Section -->
+  <section class="slider" data-aos="fade-up">
+    <div class="slides">
+      <div class="slide active">Slide 1</div>
+      <div class="slide">Slide 2</div>
+      <div class="slide">Slide 3</div>
+    </div>
+    <div class="controls">
+      <button onclick="prevSlide()">❮</button>
+      <button onclick="nextSlide()">❯</button>
+    </div>
+  </section>
+
+  <!-- Our Services -->
+  <section id="services" class="cards" data-aos="fade-up">
+    <div class="card">
+      <h3>Web Design</h3>
+      <p>Clean and modern UI/UX design for your site.</p>
+    </div>
+    <div class="card">
+      <h3>Development</h3>
+      <p>Frontend and backend services available.</p>
+    </div>
+    <div class="card">
+      <h3>SEO</h3>
+      <p>Improve your site visibility on search engines.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MySite. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
