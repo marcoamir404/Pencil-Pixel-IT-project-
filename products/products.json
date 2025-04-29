@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":	"Eco-Sharp Pencil Sharpener",
+        "price": 45,
+        "image": "img1.png"
+    },
+    {
+        "id": 2,
+        "name":" Pastel Note Cube (Pack of 6)",
+        "price": 60.0,
+        "image": "img2.png"
+    },
+    {
+        "id": 3,
+        "name":"High-Pigment Marker Set (6 Colors) ",
+        "price": 75.0,
+        "image": "img3.png"
+    },
+    {
+        "id": 4,
+        "name":"Premium Ballpoint Pen Assortment (8 pcs) ",
+        "price": 120.0 ,
+        "image": "img4.png"
+    },
+    {
+        "id": 5,
+        "name":"Rainbow Page Flags (1000 pcs) ",
+        "price": 35.0,
+        "image":"img5.png"
+    },
+    {
+        "id": 6,
+        "name":"Classic Bic Ballpoint Pen Set (5 pcs) ",
+        "price": 80.0,
+        "image": "img6.png"
+    },
+    {
+        "id": 7,
+        "name":" Soft-Cover College Ruled Notebook (5-pack)",
+        "price": 200.0,
+        "image": "img7.png"
+    },
+    {
+        "id": 8,
+        "name":"Oxford A4 Loose-Leaf Paper (500 sheets) ",
+        "price": 175.0,
+        "image": "img8.png"
+    }
+
+]

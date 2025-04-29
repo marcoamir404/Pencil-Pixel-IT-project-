@@ -1,11 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout Form</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="chechout.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -20,13 +19,14 @@
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../Login/signin.html">Login</a></li>
                         <li><a href="../products/products.html">Products</a></li>
-                        <li><a href="../contact us/contact.html">Cotact Us</a></li>
+                        <li><a href="../contact us/contact.html">Contact Us</a></li>
                         <li><a href="../check out/checkout.html">Check Out</a></li>
                         <li><a href="../Terms and conditions/terms.html">Terms and conditions</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="box">
+
+            <div class="boxsearch">
                 <input type="checkbox" id="check">
                 <div class="search-box">
                     <input type="text" placeholder="Type here...">
@@ -35,6 +35,7 @@
                     </label>
                 </div>
             </div>
+
             <div class="switchbox">
                 <p>Web Theme</p>
                 <label class="switch">
@@ -42,53 +43,41 @@
                     <span class="slider"></span>
                 </label>
             </div>
+            
             <div class="profile">            
                 <a href="../Login/signin.html"><i class="fa fa-user" aria-hidden="true"></i></a>
             </div>
         </div>
     </header>
-    <main>
-        <div class="container">
-            <div class="left">
-                <img src="https://i.pinimg.com/736x/64/42/bc/6442bc4c5cb36ec1c9cbc96e8819e1da.jpg" alt="supplies photo" style="max-width: 300%; height: 200%;">
-            </div>
-            <div class="right">
-                <h2>CheckOut<br><small>Payment Information</small></h2>
-    
-                <label for="name">Cardholder Name</label>
-                <input type="text" id="name" placeholder="code break" />
-    
-                <label for="number">Card Number</label>
-                <input type="text" id="number" placeholder="1234 5678 9012 3456" />
-    
-                <label for="type">Card Type</label>
-                <select id="type">
-                    <option value="">select a card Type</option>
-                    <option value="visa">Visa</option>
-                    <option value="mastercard">MasterCard</option>
-                    <option value="amex">American Express</option>
-                </select>
-    
-                <div class="row">
-                    <div>
-                        <label for="expiry">Expiry</label>
-                        <input type="text" id="expiry" placeholder="mm/dd/yyyy" />
-                    </div>
-                    <div>
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" placeholder="CVV" />
-                    </div>
-                </div>
-    
-                <button>CheckOut</button>
+    <div class="container">
+        <div class="second-header">
+            <div class="title">PRODUCT LIST</div>
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                </svg>
+                <span>0</span>
             </div>
         </div>
-    </main>
+        <div class="listProduct">
+
+        </div>
+    </div>
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut"><a href="../check out/checkout.html">check Out</a></button>
+        </div>
+    </div>
     <footer>
         <div class="footer">
             copyright © 2025 Pencil&Pixel. All rights reserved.
         </div>
     </footer>
-    <script src="checkout.js"></script>
+    <script src="products.js"></script>
 </body>
 </html>

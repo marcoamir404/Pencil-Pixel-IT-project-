@@ -322,6 +322,10 @@ audio{
     border: none;
 }
 /*slider*/
+.productsection{
+    text-decoration: none;
+    color: var(--font-color);
+}
 .slider2 {
     width: 800px;
     text-align: center;
