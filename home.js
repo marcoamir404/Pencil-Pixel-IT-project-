@@ -33,12 +33,8 @@ const swiper = new Swiper('.mySwiper', {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 30,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
     autoplay: {
-      delay: 3000,
+      delay: 1000,
       disableOnInteraction: false,
     },
   });
