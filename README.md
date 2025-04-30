@@ -5,11 +5,20 @@
 
 # Team Members
 Omar Waleed Mohamed Galal
+
 Malak Mohamed Hussein Abdelhameed
+
 Marco Amir Malak Nagib
+
 Maria Victor Raouf Botros
+
 Mariam Emad Fathy Haleem
+
 Menatallah Mohamed Hassan
+
 Mohamed Adel Mohamed Ahmed
+
 Mohamed Alaa Saleh Mohamed
+
 Youstina Attia Shehata Attia
+
