@@ -28,6 +28,7 @@ main{
     color: white;
     padding: 10px 30px 10px 30px;
     box-shadow: 5px 5px 5px 5px  rgba(0, 0, 0, 0.301);
+    margin: -8px -10px 0 -10px;
 }
 .home{
     text-decoration: none;
@@ -133,7 +134,7 @@ input:checked + .slider:before {
 .box .search-box {
     position: absolute;
     right: 26%;
-    top: 10px;
+    top: 2px;
     height: 50px;
     width: 50px;
     margin: auto;

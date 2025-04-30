@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - pencil&pixel</title>
+  <link rel="stylesheet" href="about us.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+        <a href="../index.html" class="home">Pencil&Pixel</a>
+        <div class="nav-bar">
+            <label id="arrow-up" onclick="showUp()"><i class="fa fa-bars bars" aria-hidden="true"></i><i class="fa fa-angle-double-down" aria-hidden="true"></i></label>
+            <label class="hidden" id="arrow-down" onclick="showDown()"><i class="fa fa-bars bars" aria-hidden="true"></i><i class="fa fa-angle-double-up" aria-hidden="true"></i></label>
+            <div class="hidden trans" id="nav-content">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Login/signin.html">Login</a></li>
+                    <li><a href="../products/products.html">Products</a></li>
+                    <li><a href="../contact us/contact.html">Contact Us</a></li>
+                    <li><a href="../check out/checkout.html">Check Out</a></li>                        
+                    <li><a href="../About us/about us.html">About Us</a></li>
+                    <li><a href="../Team members/team members.html">Our Team Members</a></li>
+                    <li><a href="../Terms and conditions/terms.html">Terms and conditions</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <input type="checkbox" id="check">
+            <div class="search-box">
+                <input type="text" placeholder="Type here...">
+                <label for="check" class="icon">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </label>
+            </div>
+        </div>
+
+        <div class="switchbox">
+            <p>Web Theme</p>
+            <label class="switch">
+                <input type="checkbox" id="themeSwitch">
+                <span class="slider"></span>
+            </label>
+        </div>
+        
+        <div class="profile">            
+            <a href="../Login/signin.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+        </div>
+    </div>
+  </header>
+  <main>
+  <section class="about-us">
+    <div class="content">
+      <h1>About Us</h1>
+      <h2>Welcome to pencil&pixel</h2>
+      <p>
+        pencil&pixel is your go-to destination for high-quality school supplies. From notebooks and pens to art tools and backpacks, we provide everything students need to learn and grow creatively.
+        <br><br>
+        Our mission is to inspire education through beautiful and functional stationery, offering both style and substance to every classroom.
+      </p>
+      <a href="../index.html" class="learn-more">Learn More</a>
+    </div>
+    <div class="image">
+      <img src="img1.jpg" alt="School supplies" style="height: 600px;width: 500px; "/>
+    </div>
+  </section>
+  </main>
+  <footer>
+    <div class="footer">
+      copyright © 2025 Pencil&Pixel. All rights reserved.
+    </div>
+  </footer>
+  <script src="about us.js"></script>
+</body>
+</html>
