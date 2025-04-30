@@ -28,7 +28,7 @@ switchBtn.addEventListener('change', () => {
     localStorage.setItem('theme', theme);
 });
 
-// Slider Logic
+// Slider 
 const swiper = new Swiper('.mySwiper', {
     loop: true,
     slidesPerView: 3,
