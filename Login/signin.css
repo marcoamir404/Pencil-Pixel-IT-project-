@@ -216,10 +216,11 @@ input:checked + .slider:before {
     background-color: transparent;
     box-shadow: 0 0 10px #0ef;
     height: 430px;
-    transition: .8s ease-in-out;
+    transition: 1.1s ease-out;
     justify-items: center;
     border-radius: 10px;
 }
+
 label{
     font-family:'Times New Roman', Times, serif;
     font-size: 2rem;
@@ -334,9 +335,8 @@ hr{
     margin-top: 53px;
 }
 .signup{
-    height: 90%;
     background-color: transparent;
-    transition: .8s ease-in-out;
+    transition: 1.1s ease-out;
     width: 500px;
     height: 430px;
     position: absolute;
@@ -346,7 +346,6 @@ hr{
     display: flex;
     justify-content: center;
     box-shadow: 0 0 10px #0ef;
-    transition: 0.8s ease-in-out;
 }
 .hidden {
     transform: translateY(500px) translate(-50%,-50%);
