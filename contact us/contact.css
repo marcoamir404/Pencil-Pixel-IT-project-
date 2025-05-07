@@ -144,28 +144,38 @@ input:checked + .slider:before {
     --base-color: #081b29;
     --form-color: #2f988f;
 }
+
 /*search bar*/
 .box {
     max-width: 400px;
     width: 100%;
 }
+/* Hide the checkbox */
+#check {
+    display: none;
+}
+  
+/* Container of the search bar */
 .box .search-box {
     position: absolute;
     right: 26%;
-    top: 2px;
+    top: 3px;
     height: 50px;
-    width: 50px;
+    width: 0px;
     margin: auto;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     transition: all 0.3s ease;
     display: flex;
     justify-content: flex-start;
+    background-color: transparent;
     overflow: hidden;
 }
+  
+/* Expand the search box when checkbox is checked */
 #check:checked ~ .search-box {
     width: 250px;
 }
+/* Style the input inside the search box */
 .search-box input {
     height: 100%;
     width: 100%;
@@ -175,8 +185,11 @@ input:checked + .slider:before {
     border: none;
     font-size: 18px;
     padding-left: 15px;
-    transition: all 0.3s ease;
+    z-index: 0;
+    position: relative;
+    right: -55px;
 }
+/* Style the icon (label acting as toggle button) */
 .search-box .icon {
     position: absolute;
     right: 0;
@@ -188,18 +201,16 @@ input:checked + .slider:before {
     line-height: 50px;
     color: var(--base-color);
     font-size: 20px;
-    border-radius: 25px;
+    border-radius: 50%;
     z-index: 1;
     cursor: pointer;
     transition: all 0.3s ease;
-} 
+}
+/* Adjust border radius when expanded */
 #check:checked ~ .search-box .icon {
     border-radius: 0 25px 25px 0;
 }
-#check {
-    display: none;
-}
-
+  
 .profile i{
     font-size:2.5rem;
     color: white;

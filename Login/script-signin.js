@@ -1,11 +1,11 @@
 function showSignUp() {
-    document.getElementById("signin").classList.add("hidden");
-    document.getElementById("signup").classList.remove("hidden");
+    document.getElementById("signin").classList.add("hidden2");
+    document.getElementById("signup").classList.remove("hidden1");
 }
 
 function showSignIn() {
-    document.getElementById("signup").classList.add("hidden");
-    document.getElementById("signin").classList.remove("hidden");
+    document.getElementById("signup").classList.add("hidden1");
+    document.getElementById("signin").classList.remove("hidden2");
 }
 function sendMessageLogin() {
     alert("Wrong E-mail or password");

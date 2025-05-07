@@ -91,7 +91,10 @@ html{
     margin-left: 15px;
     position: absolute;
     right: 19%;
-    margin-bottom: 10px;
+    top: -10px;
+}
+.switchbox p{
+    color: white;
 }
 .switch {
     position: relative;
