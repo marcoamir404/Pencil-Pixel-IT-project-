@@ -255,6 +255,7 @@ svg{
     padding: 5px 10px;
     margin-top: 10px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .cartTab{
