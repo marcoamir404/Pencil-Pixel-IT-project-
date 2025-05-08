@@ -4,6 +4,7 @@
 }
 body{
     background-color: var(--base-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -92,6 +93,7 @@ html{
     position: absolute;
     right: 19%;
     top: -10px;
+    font-family:fantasy;
 }
 .switchbox p{
     color: white;

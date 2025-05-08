@@ -5,6 +5,7 @@
 }
 body{
     background-color: var(--base-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 main{
     display: flex;
@@ -87,7 +88,6 @@ main{
     text-decoration: none;
     color: white;
 }
-/*theme switch*/
 .switchbox{
     display: grid;
     align-items: center;
@@ -96,6 +96,7 @@ main{
     position: absolute;
     right: 19%;
     margin-bottom: 10px;
+    font-family: fantasy;
 }
 .switch {
     position: relative;
@@ -139,7 +140,6 @@ input:checked + .slider:before {
     --form-color: #081b29;
     --border: 50%;
 }
-/*search bar*/
 .box {
     max-width: 400px;
     width: 100%;
@@ -214,15 +214,15 @@ input:checked + .slider:before {
     transform: translate(-50%,-50%);
     width: 500px;
     background-color: transparent;
-    box-shadow: 0 0 10px #0ef;
+    box-shadow: 0 0 10px #fd5d2b;
     height: 430px;
     transition: .8s ease-out;
     justify-items: center;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 label{
-    font-family:'Times New Roman', Times, serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     font-weight: bold;
     color:whitesmoke;
@@ -256,7 +256,7 @@ label{
     font-size: 1rem;
     cursor: pointer;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .email{
     width: 300px;
@@ -313,16 +313,20 @@ hr{
     justify-content: center;
 }
 .submit button{
-    background: linear-gradient(#081b29, #0ef,#081b29);
-    color: white;
-    width: 200px;
-    height: 25px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: 0.2s ease-in;
+    background-color: #f57c00; /* Orange */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 .submit button:hover{
-    background: linear-gradient(#0ef,#081b29,#0ef);
+    background-color: #ef6c00; /* Darker orange */
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(245, 124, 0, 0.4);
 }
 #signupswitch{
     background-color: aliceblue;
@@ -333,6 +337,7 @@ hr{
     color: #081b29;
     position: relative;
     margin-top: 53px;
+    box-shadow: 0 0 10px #fd5d2b;
 }
 .signup{
     background-color: transparent;
@@ -345,7 +350,8 @@ hr{
     transform: translate(-50%,-50%);
     display: flex;
     justify-content: center;
-    box-shadow: 0 0 10px #0ef;
+    box-shadow: 0 0 10px #fd5d2b;
+    border-radius: 20px;
 }
 .hidden1 {
     transform: translateY(500px) translate(-50%,-50%);
@@ -361,6 +367,7 @@ hr{
     display: flex;
     justify-content: center;
     cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .name{
     width: 300px;
@@ -437,6 +444,7 @@ hr{
     color: #081b29;
     position: relative;
     top: -6px;
+    box-shadow: 0 0 10px #fd5d2b;
 }
 .footer{
     position: fixed;
