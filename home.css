@@ -75,7 +75,7 @@ html{
     color: white;
     transition: 1s ease-in-out;
     cursor: pointer;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .trans a{
     text-decoration: none;
