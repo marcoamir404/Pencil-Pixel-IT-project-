@@ -258,6 +258,9 @@ input:checked + .slider:before {
     color: white;
     font-size:large;
 }
+.link1:hover{
+    color: red;
+}
 .footer{
     width: 100%;
     color: white; 
