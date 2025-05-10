@@ -7,12 +7,6 @@ function showSignIn() {
     document.getElementById("signup").classList.add("hidden1");
     document.getElementById("signin").classList.remove("hidden2");
 }
-function sendMessageLogin() {
-    alert("Wrong E-mail or password");
-}
-function sendMessageSignUp() {
-    alert("Somthing went wrong try again later!")
-}
 
 function showUp() {
     document.getElementById("arrow-up").classList.add("hidden");
