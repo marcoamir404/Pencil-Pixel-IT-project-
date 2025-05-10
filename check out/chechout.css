@@ -5,11 +5,11 @@
 
 * {
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     background-color: var(--base-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 main{
     display: flex;
@@ -37,7 +37,7 @@ main{
     font-size: 2.5rem;
 }
 .nav-bar{
-    margin: 0 0 0 25px;
+    margin: 0 0 7px 25px;
 }
 .nav-bar i{
     font-size: 1.5rem;
@@ -70,6 +70,7 @@ main{
     color: white;
     transition: 1s ease-in-out;
     cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .trans a{
     text-decoration: none;
@@ -83,8 +84,8 @@ main{
     margin-left: 15px;
     position: absolute;
     right: 19%;
-    margin-bottom: 10px;
-    font-family:fantasy;
+    margin-bottom: 5px;
+    font-family: fantasy;
 }
 .switch {
     position: relative;
