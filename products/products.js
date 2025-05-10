@@ -7,6 +7,22 @@ let closeCart = document.querySelector('.close');
 let products = [];
 let cart = [];
 
+const initApp = () => {
+    
+    fetch('products.json')
+    .then(response => response.json())
+    .then(data => {
+        products = data;
+        addDataToHTML();
+
+        
+        if(localStorage.getItem('cart')){
+            cart = JSON.parse(localStorage.getItem('cart'));
+            addCartToHTML();
+        }
+    })
+}
+initApp();
 
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
@@ -125,23 +141,6 @@ const changeQuantityCart = (product_id, type) => {
     addCartToHTML();
     addCartToMemory();
 }
-
-const initApp = () => {
-    
-    fetch('products.json')
-    .then(response => response.json())
-    .then(data => {
-        products = data;
-        addDataToHTML();
-
-        
-        if(localStorage.getItem('cart')){
-            cart = JSON.parse(localStorage.getItem('cart'));
-            addCartToHTML();
-        }
-    })
-}
-initApp();
 
 function showUp() {
     document.getElementById("arrow-up").classList.add("hidden");
